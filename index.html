@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="converter-card">
+      <h1>Currency Converter</h1>
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <div class="dropdowns">
+        <select id="fromCurrency"></select>
+        <span>→</span>
+        <select id="toCurrency"></select>
+      </div>
+      <button id="convertBtn">Convert</button>
+      <p id="result"></p>
+      <canvas id="historyChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

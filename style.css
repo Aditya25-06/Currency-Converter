@@ -1,0 +1,118 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card layout */
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+.converter-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.converter-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs */
+input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border: 2px solid #667eea;
+}
+
+/* Dropdowns */
+.dropdowns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  flex: 1;
+}
+
+.dropdowns span {
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* Result */
+#result {
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Chart */
+canvas {
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media(max-width: 500px){
+  .dropdowns {
+    flex-direction: column;
+  }
+  .dropdowns span {
+    display: none;
+  }
+  select {
+    margin-bottom: 10px;
+  }
+}
